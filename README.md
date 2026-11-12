@@ -94,6 +94,8 @@ python program2-1.py
 VS Codeでは、`Python: Select Interpreter` から `.venv/bin/python` を選択してください。既に仮想環境が有効な場合は、新しく作り直す必要はありません。`requirements.txt` には上表のバージョンを記載しています。
 
 - `input()` を使うプログラムでは、実行中にキーボード入力が必要です。
+- [`program2-3.py`](program2-3.py) の平方根の近似計算は、**0より大きい数**の入力を前提としています。0を入力するとゼロ除算エラーになります。
+- [`program4-3.py`](program4-3.py) は条件分岐の学習用に単純化した例であり、実際の法令・健康上の判断を示すものではありません。
 - `dataclasses` や `random` はPythonの標準ライブラリなので追加インストールは不要です。
 - 第6回・第10回・第12回の一部のプログラムでは、追加ライブラリ（`requirements.txt` を参照）と同梱のデータファイルを使用します。
 
@@ -108,7 +110,7 @@ VS Codeでは、`Python: Select Interpreter` から `.venv/bin/python` を選択
 | [`program10-1.py`](program10-1.py), [`program12-1.py`](program12-1.py), [`program12-3.py`](program12-3.py) | [`sample.jpg`](sample.jpg) | 画像の領域編集・しきい値処理 |
 | [`program12-2.py`](program12-2.py) | [`building.jpg`](building.jpg) | 画像の色成分の変更 |
 
-> **公開前の確認**：Excelファイルに個人を特定できるデータが含まれていないか、画像の公開・再配布に問題がないか、必ずご確認ください。リポジトリをPublicにすると、データファイルや画像も誰でも閲覧・取得できます。
+> **公開データに関する注意**：この公開リポジトリのExcelファイルや画像は誰でも閲覧・取得できます。データの個人情報、および画像の公開・再配布に必要な権限を継続して確認してください。
 
 OpenCVを使うプログラムでは `cv2.imshow()` による画像ウィンドウ表示を利用しています。そのため、GUIを使用できるローカルPCでの実行を想定しています。Google Colabなどのブラウザ環境では、表示処理の変更が必要です。
 
