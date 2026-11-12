@@ -1,0 +1,15 @@
+# macOS metadata
+.DS_Store
+__MACOSX/
+._*
+
+# Python caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Generated image outputs
+program10-1.jpg
+program12-1.jpg
+program12-2.jpg
